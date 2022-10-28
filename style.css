@@ -1,67 +1,156 @@
-html, body {
-  height: 100%;
-  width: 100%;
-}
-:root{
-  --primary-clr: white;
-  --bg-clr: lightblue;
-  --clr: black;
-
-  --ff: sans-serif;
-  --fw-regular: 400;
-  --fw-bold: 700;
-}
 *{
   box-sizing: border-box;
+  border: 0;
   margin: 0;
-  padding: 0;
 }
 
 body{
-  font-family: var(--ff);
-  height: 100vh;
-  max-width: 100%;
+  background-color: #fff;
 }
 
-.main{
-  align-items: center;
-  display: grid;
+main{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 100%;
-}
-.grid{
-  background-color: var(--bg-clr);
-  border-radius: 1rem;
-  display: grid;
-  gap: .85rem;
-  width: fit-content;
-  /* height: 30vh; */
-  padding: 2rem;
+  align-items: center;
 }
 
-label{
-  font-family: var(--ff);
-  font-size: 1rem;
-  font-weight: var(--fw-bold);
+.background{
+  border-radius: 15px;
+  color: #fff;
+  height: auto;
+  margin-block: 4em;
+  max-width: 13em;
 }
 
-input{
-  border: 0;
-  font-size: 1.15rem;
+.sedans,.suvs,.luxury{
+  padding: 1.25em 1.5em;
 }
 
-input:focus-within{
-  background-color: gray;
-  border: 0;
+.sedans{
+  background-color: hsl(31, 77%, 52%);
 }
 
-.btn{
-  border: 0;
-  background-color: beige;
-  border-radius: .65rem;
-  font-size: 1rem;
-  font-weight: var(--fw-regular);
-  margin-inline: auto;
-  padding: .75rem .85rem;
-  text-align: center;
+.suvs{
+  background-color: hsl(184, 100%, 22%);
+
 }
+
+.luxury{
+  background-color: hsl(179, 100%, 13%);
+
+}
+
+.sedans > img,
+.suvs > img, 
+.luxury > img{
+  height: 26px;
+}
+
+.sedans > h2,
+.suvs > h2, 
+.luxury > h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-block: 1em;
+  text-transform: uppercase;
+}
+
+.sedans > p,
+.suvs > p, 
+.luxury > p {
+  font-size: .7rem;
+  line-height: 1.4em;
+  width: 90%;
+}
+
+.sedans > .btn,
+.suvs > .btn,
+.luxury > .btn{
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  display: inline-block;
+  font-size: .65rem;
+  margin-block: 1.35em;
+  outline: none;
+  padding: .75em 1.8em;
+  text-decoration: none;
+  text-transform: capitalize;
+
+}
+
+.sedans > .btn{
+  color: hsl(31, 77%, 52%);
+}
+.sedans > .btn:hover {
+background-color: hsl(31, 77%, 52%);
+color: #fff;
+cursor: pointer;
+}
+
+.suvs > .btn{
+  color: hsl(184, 100%, 22%);
+}
+.suvs > .btn:hover{
+  background-color: hsl(184, 100%, 22%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.luxury > .btn{
+  color: hsl(179, 100%, 13%);
+}
+.luxury > .btn:hover{
+  background-color: hsl(179, 100%, 13%);
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+@media (min-width: 90em) {
+  main{
+    background-color: #fff;
+  }
+
+  .background{
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 38em;
+    height: auto;
+  }
+
+  .sedans,.suvs,.luxury{
+    padding: 1.5em 1.65em;
+  }
+
+  .sedans{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .luxury{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .sedans > p, 
+  .suvs > p, 
+  .luxury > p{
+    font-size: .7rem;
+    margin-bottom: 4em;
+    width: 87%;
+  }
+
+  .sedans > .btn,
+  .suvs > .btn,
+  .luxury > .btn{
+    margin-bottom: 1.25em;
+  }
+}
+Footer
+© 2022 GitHub, Inc.

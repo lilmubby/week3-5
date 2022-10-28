@@ -6,51 +6,45 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="images/favicon-32x32.png">
 </head>
 
 <body>
-  <main class="main">
-    <form action="login.html" class="grid">
-      <div class="container">
-        <label for="fname">First Name:</label>
-        <input type="text" placeholder="Enter First Name" name="fname" />
-      </div>
 
-      <div class="container">
-        <label for="lname">Last Name:</label>
-        <input type="text" placeholder="Enter Last Name" name="lname" />
+  <main>
+    <section class="background">
+      <div class="sedans">
+        <img src="images/icon-sedans.svg" alt="Sedans">
+        <h2 class="sedans-header">sedans</h2>
+        <p>
+          Choose a sedan for its affordability and excellent fuel
+          economy. Ideal for cruising in the city or on your next road trip.
+        </p>
+        <button class="btn yellow">learn more</button>
       </div>
-
-      <div class="container">
-        <label for="email">Email:</label>
-        <input type="email" placeholder="Enter your email" name="email" required />
+      <div class="suvs">
+        <img src="images/icon-suvs.svg" alt="SUVs">
+        <h2 class="suvs-header">SUVS</h2>
+        <p>
+          Take an SUV for its spacious interior, power, and versatility.
+          Perfect for your next family vacation and off-road adventures.
+        </p>
+        <button class="btn middle">learn more</button>
       </div>
-
-      <div class="container">
-        <label for="gender">Gender:</label>
-        <select name="gender" id="gender">
-          <option value="null">Select Gender</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
+      <div class="luxury">
+        <img src="images/icon-luxury.svg" alt="Luxury Cars">
+        <h2 class="luxury-header">luxury</h2>
+        <p>
+          Cruise in the best car brands without the bloated prices.
+          Enjoy the enhanced comfort of a luxury rental and arrive in style.
+        </p>
+        <button class="btn green">learn more</button>
       </div>
-
-      <div class="container">
-        <label for="color">Favourite Colour:</label>
-        <input type="color" name="color" placeholder="Pick Favourite Colour" />
-      </div>
-
-      <div class="container">
-        <label for="DOB"></label>
-        <input type="date" name="DOB" placeholder="Date of Birth" />
-      </div>
-      <div class="container">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" required />
-      </div>
-      <button class="btn">Register</button>
-    </form>
+    </section>
   </main>
+
+
+
 
   <script src="script.js"></script>
 
