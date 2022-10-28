@@ -9,49 +9,78 @@
 </head>
 
 <body>
-  <main class="main">
-    <form action="login.html" class="grid">
-      <div class="container">
-        <label for="fname">First Name:</label>
-        <input type="text" placeholder="Enter First Name" name="fname" />
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#interests">interests</a></li>
+        <li><a href="#contact-page">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about-me">
+      <h1>Hi, there</h1>
+      <h2>I'm Mubarak</h2>
+      <p>A frontend developer</p>
+    </section>
+    <section id="services">
+      <div class="service-container">
+        <blockquote>
+          ...using prevailing web development technologies to bring ideas into
+          light
+        </blockquote>
+        <p>these technologies include: HTML, CSS, JavaScript, GIT, ReactJs</p>
       </div>
-
-      <div class="container">
-        <label for="lname">Last Name:</label>
-        <input type="text" placeholder="Enter Last Name" name="lname" />
+    </section>
+    <section id="projecet" class="grid">
+      <div class="project">
+        <img src="coding-desktop-preview.jpg" alt="project" />
+        <a href="https://github.com/lilmubby/coding-bootcamp-testimal">Coding bootcamp</a>
       </div>
-
-      <div class="container">
-        <label for="email">Email:</label>
-        <input type="email" placeholder="Enter your email" name="email" required />
+      <div class="project">
+        <img src="rating-mobile-design.jpg" alt="project" /><a
+          href="https://github.com/lilmubby/Interactive-Rating">Interactive Rating</a>
       </div>
-
-      <div class="container">
-        <label for="gender">Gender:</label>
-        <select name="gender" id="gender">
-          <option value="null">Select Gender</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
+      <div class="project">
+        <img src="tip-desktop-design-completed.jpg" alt="project" /><a
+          href="https://github.com/lilmubby/tipCalculator">Tip Calculator</a>
       </div>
-
-      <div class="container">
-        <label for="color">Favourite Colour:</label>
-        <input type="color" name="color" placeholder="Pick Favourite Colour" />
+      <div class="project">
+        <img src="" alt="project" /><a href="https://codepen.io/Lilmubby/pen/LYmBdzK">Tribute Page</a>
       </div>
-
-      <div class="container">
-        <label for="DOB"></label>
-        <input type="date" name="DOB" placeholder="Date of Birth" />
+      <div class="project">
+        <img src="" alt="project" /><a href="https://codepen.io/Lilmubby/pen/xxjzLvP">Table record</a>
       </div>
-      <div class="container">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" required />
-      </div>
-      <button class="btn">Register</button>
-    </form>
+    </section>
+    <section id="interests">
+      <ul>
+        <li>Football</li>
+        <li>Netflix and chills</li>
+        <li>Table Tennis</li>
+        <li>Food</li>
+        <li>Qur'an</li>
+      </ul>
+    </section>
   </main>
-
+  <footer>
+    <section id="contact-page">
+      <form action="post">
+        <div class="name">
+          <label for="usename">Name</label>
+          <input type="text" name="username" id="username" placeholder="Enter Your Name" />
+        </div>
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter Your Email" />
+        </div>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <button class="btn">Submit</button>
+      </form>
+    </section>
+  </footer>
   <script src="script.js"></script>
 
   <!--
